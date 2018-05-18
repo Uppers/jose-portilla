@@ -1,0 +1,25 @@
+
+body
+    {
+        /* background-color:gray */
+        background: url(https://www.therepulsebay.com/wp-content/uploads/2016/12/therepulsebay_birdview.jpg);
+        background-size: cover;
+    }
+div
+    {
+        background-color:blue;
+        border-color:orange;
+        border-width: 4px;
+        border-style: double;
+    }
+
+p
+    {
+        color:yellow;
+    }
+    
+span
+    {
+        background: red;
+        color: black;
+    }
