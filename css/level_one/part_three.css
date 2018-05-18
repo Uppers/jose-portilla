@@ -1,0 +1,44 @@
+
+
+/* tell the browser that the tag is for a div by using a . before the name of the tag */
+.firstDiv
+    {
+        color:blue;
+    }
+
+.secondDiv
+    {
+        color:red;
+    }
+
+/* tell the browser that the tag is for an id by using a # before the name of the id tag  */
+#singledout
+    {
+        color:green;
+        text-decoration: line-through; /*text decoration is for bold/ itallics/ line through etc.*/
+    }
+
+/* the * icon tells the browser to style all elements in this way */
+/* *
+    {
+        color:black;
+    } */
+
+/* adjacent elements , these are a type of element which are next to another element type */
+h3 + ul 
+    {
+        border: 4px dotted purple;
+    }
+
+/*descendants*/
+/* e.g. all links inside lists */
+li a
+    {
+        color:red;
+    }
+/* e.g. link in list with given url address*/
+li a[href="www.npr.org"]
+    {
+        color:blue;
+        border: 5px solid orange;
+    }
