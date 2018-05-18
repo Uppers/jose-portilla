@@ -1,0 +1,18 @@
+#top
+    {
+        border:4px solid blue;
+        width: 25%;
+        text-align:center;
+        /* top right bottom left */
+        /* if you want to center an object, call margin: auto; */
+        margin: 10px 20px 100px 400px
+    }
+
+#bottom
+    {
+        border:4px solid red;
+        width:50%;
+        padding:200px;
+        text-align: center;
+        margin:auto;
+    }
