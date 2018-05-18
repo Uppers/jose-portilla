@@ -1,0 +1,56 @@
+table
+    {
+        margin:1em auto 1em auto;
+        width : 50%;
+        height:25em;
+        border-spacing: 1em;
+    }
+
+#one
+    {
+        background:#42F2F7;
+        width: 5%;
+        height:100%;
+        border-width: 10em;
+        border-color: white;
+        
+    }
+
+
+#two
+    {
+        background:#46ACC2;
+        width: 5%;
+        height:100%;
+        
+    }
+
+#three
+    {
+        background:#498C8A;
+        width: 5%;
+        height:100%;
+        
+    }
+
+#four
+    {
+        background:#4B6858;
+        width: 5%;
+        height:100%;
+    }
+
+#five
+    {
+        background:#4D4730;
+        width: 5%;
+        height:100%;
+        
+    }
+h1
+    {
+        width:50%;
+        margin:auto;
+        font-family: 'Amatic SC', cursive;
+        text-align: center;
+    }
