@@ -4,4 +4,12 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("<em>My Second App</em>")
+    return HttpResponse("Homepage")
+
+def second_app(request):
+    title = {'page_title':'This is the Second App'}
+    return render(request, "second_app/help_page.html", context= title)
+
+def help(request):
+    title = {'page_title': 'This is the Help Page'}
+    return render(request, "second_app/help_page.html", context= title) 
