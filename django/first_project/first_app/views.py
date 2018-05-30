@@ -4,3 +4,6 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("Hello World!")
+
+def fapp(request):
+    return HttpResponse("<h1>fapping</h1>")
