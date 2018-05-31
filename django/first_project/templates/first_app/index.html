@@ -4,15 +4,33 @@
 <head>
     <meta charset="utf-8" />
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <title>first template</title>
+    <title>index</title>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <link rel="stylesheet" href={% static "css/mystyle.css" %} />
     <!-- <script src="main.js"></script> -->
 
 </head>
 <body>
-    <h1>Hello this is index.html</h1>
-    {{ insert_me }}
-    <img src = "{% static "images/lioness.jpg" %}" alt = "ERROR">
+    <h1>Welcome</h1>
+    <h2>Here are your access records:</h2>
+    <div class = "djangtwo">
+        {% if access_records %}
+        <table>
+            <thead>
+                <th>Site Name</th>
+                <th>Date Accessed</th>
+            </thead>
+            {% for acc in access_records %}
+            <tr>
+                <td>{{ acc.name }}</td>
+                <td>{{ acc.date }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>NO ACCESS RECORDS FOUND</p>
+        {% endif %}
+    </div>
+    
 </body>
 </html>
