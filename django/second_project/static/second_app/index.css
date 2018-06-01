@@ -1,0 +1,9 @@
+h1{
+    background-color: #0F3563;
+    color: white;
+    font-family: "Arial Narrow", Arial, sans-serif;
+}
+.unordered{
+    list-style-type: circle;
+    margin-left: 0em;
+}

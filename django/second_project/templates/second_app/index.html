@@ -1,0 +1,33 @@
+<!DOCTYPE <!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>Page Title</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" href="{% static "second_app/index.css" %}" />
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <h1>Antarctica Homepage </h1>
+    <div>
+        {% if user_table %}
+        <ol>
+            {% for record in user_table%}
+            <li>User Details</li>
+            <ul class = 'unordered'>
+                <li>{{ record.first_name }}</li>
+                <li>{{ record.last_name }}</li>
+                <li>{{ record.email }}</li>
+            </ul>
+            <p></p>
+            {% endfor %}
+        </ol>
+
+        {% else %}
+        <p>NO RECORDS FOUND</p>
+        {% endif %}
+    </div>
+</body>
+</html>
